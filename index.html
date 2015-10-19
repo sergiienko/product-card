@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-	<title>Start</title>
+	<title>MOMENTUM® - Wireless Black</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,7 +11,10 @@
 	<link rel="icon" href="favicon.png"/>
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/slick.css" />
+	<link rel="stylesheet" href="css/icomoon.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -19,16 +22,105 @@
 	<![endif]-->
 </head>
 <body>
-	<header class="ba-header">
-
-	</header>
 	<main role="main">
 
+	<div class="ba-container">
+
+		<article class="ba-product">
+			<div class="ba-product__logo">
+				<img src="img/logo.png" alt="Sennheiser">
+			</div>
+
+			<div class="ba-grid">
+				<div class="ba-width-medium-1-2">
+
+					<div class="ba-slider">
+						<div class="ba-slide">
+							<img src="img/product/headphones1.png" alt="Headphones">
+						</div>
+						<div class="ba-slide">
+							<img src="img/product/headphones2.png" alt="Headphones">
+						</div>
+						<div class="ba-slide">
+							<img src="img/product/headphones3.png" alt="Headphones">
+						</div>
+						<div class="ba-slide">
+							<img src="img/product/headphones4.png" alt="Headphones">
+						</div>
+						<div class="ba-slide">
+							<img src="img/product/headphones5.png" alt="Headphones">
+						</div>
+					</div>
+					<!-- /.ba-slider -->
+
+				</div>
+				<div class="ba-width-medium-1-2">
+					<div class="ba-product__info">
+						<p class="ba-product__model">Model: 505795</p>
+						<a class="ba-product__spec" href="#"><i class="icon-cog"></i>spec</a>
+
+						<h1 class="ba-product__title">MOMENTUM<sup>&reg;</sup></h1>
+						<h2 class="ba-product__subtitle">Wireless Black</h2>
+
+						<p class="ba-product__brief-desc">Wireless headphones with integrated microphone</p>
+
+						<p class="ba-product__desc">Peak performance with active noise cancelation. Sennheiser's new MOMENTUM Wireless - Closed circumaural headphone featuring <a href="#" target="_blank">Bluetooth<sup>&reg;</sup></a> wireless technology and NoiseGard Hybrid active noise cancelation</p>
+						<!-- /.ba-product__description -->
+
+						<div class="ba-rating cf">
+							<div class="ba-rating__stars ba-float-left">
+								<i class="icon-star ba-filled"></i><!--
+								--><i class="icon-star ba-filled"></i><!--
+								--><i class="icon-star ba-filled"></i><!--
+								--><i class="icon-star ba-filled"></i><!--
+								--><i class="icon-star"></i>
+							</div>
+							<div class="ba-rating__value ba-float-left">
+								<span class="ba-rating__score">4.25</span>
+								<span class="ba-rating__review">153 reviews</span>
+							</div>
+
+						</div>
+						<!-- /.ba-rating -->
+
+						<form action="#" method="post">
+							<div class="ba-product__meta cf">
+								<div class="ba-float-left-small">
+									<div class="ba-product__price">$499.95</div>
+									<p class="ba-product__overcost">Shipping and taxes extra</p>
+								</div>
+								<div class="ba-product__variations ba-float-right-small">
+									<label>Choose your colors:</label>
+									<input type="radio" name="product_color" value="black">
+									<input type="radio" name="product_color" value="grey">
+								</div>
+							</div>
+
+							<div class="ba-product__add-to-cart">
+								<label class="ba-product__qty">
+									Quantity
+									<input type="number" class="ba-product__qty-field" name="product_qty" value="01" step="1" min="1" requiered>
+									<button class="ba-product__qty-up"></button>
+									<button class="ba-product__qty-down"></button>
+								</label>
+								<button class="ba-button" type="submit">Add to Cart</button>
+							</div>
+							<!-- /.ba-product__add-to-cart -->
+						</form>
+
+					</div>
+					<!-- /.ba-product__info -->
+				</div>
+			</div>
+		</article>
+		<!-- /.ba-poduct -->
+
+	</div>
+
 	</main>
-	<footer class="ba-footer">
 
-	</footer>
-
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
