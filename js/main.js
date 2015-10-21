@@ -1,5 +1,9 @@
 ;(function($) {
 
+	var pad = function(num) {
+		return num / 10 < 1 ? "0" + num : num;
+	};
+
 	$(function() {
 		var $slider = $(".ba-slider");
 
@@ -15,13 +19,13 @@
 		$qtyUp.on("click", function(e) {
 			e.preventDefault();
 			var oldVal = $qtyField.val();
-			$qtyField.val(++oldVal);
+			$qtyField.val(pad(++oldVal));
 		});
 
 		$qtyDown.on("click", function(e) {
 			e.preventDefault();
 			var oldVal = $qtyField.val();
-			$qtyField.val(--oldVal || 1);
+			$qtyField.val(pad(--oldVal || 1));
 		});
 
 	});

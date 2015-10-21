@@ -91,8 +91,12 @@
 								</div>
 								<div class="ba-product__variations ba-float-right-small">
 									<label>Choose your colors:</label>
-									<input type="radio" name="product_color" value="black">
-									<input type="radio" name="product_color" value="grey">
+
+									<input type="radio" name="product_color" id="ba-id-product-grey" value="grey">
+									<label class="ba-product__radio ba-product__radio_color_grey" for="ba-id-product-grey"></label>
+
+									<input type="radio" name="product_color" id="ba-id-product-black" value="black" checked>
+									<label class="ba-product__radio ba-product__radio_color_black" for="ba-id-product-black"></label>
 								</div>
 							</div>
 
@@ -100,10 +104,14 @@
 								<label class="ba-product__qty">
 									Quantity
 									<input type="number" class="ba-product__qty-field" name="product_qty" value="01" step="1" min="1" requiered>
-									<button class="ba-product__qty-up"></button>
-									<button class="ba-product__qty-down"></button>
+									<button class="ba-product__qty-up">
+										<i class="icon-arrow-u"></i>
+									</button>
+									<button class="ba-product__qty-down">
+										<i class="icon-arrow-d"></i>
+									</button>
 								</label>
-								<button class="ba-button" type="submit">Add to Cart</button>
+								<button class="ba-button ba-float-right" type="submit">Add to Cart</button>
 							</div>
 							<!-- /.ba-product__add-to-cart -->
 						</form>
