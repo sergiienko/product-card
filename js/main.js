@@ -1,14 +1,19 @@
 ;(function($) {
 
 	var pad = function(num) {
-		return num / 10 < 1 ? "0" + num : num;
+		return num < 10 ? "0" + num : num;
 	};
 
 	$(function() {
-		var $slider = $(".ba-slider");
+		var $slider = $(".ba-slider"),
+			$prev = $(".slick-prev", $slider),
+			$next = $(".slick-next", $slider);
 
 		$slider.slick({
-			dots: true
+			dots: true,
+			prevArrow: $prev,
+			nextArrow: $next,
+			slide: ".ba-slide"
 		});
 
 		// Increase and decrease quantity.

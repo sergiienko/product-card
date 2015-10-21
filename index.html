@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="css/slick.css" />
-	<link rel="stylesheet" href="css/icomoon.css" />
+	<!-- <link rel="stylesheet" href="css/icomoon.css" /> -->
 	<link rel="stylesheet" href="css/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel='stylesheet' type='text/css'>
 
@@ -22,6 +22,34 @@
 	<![endif]-->
 </head>
 <body>
+	<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<defs>
+		<symbol id="icon-ion-android-star" viewBox="0 0 808 1024">
+			<title>ion-android-star</title>
+			<path class="path1" d="M404 746l-250 150 66-284-220-192 290-24 114-268 114 268 290 24-220 192 66 284z"></path>
+		</symbol>
+		<symbol id="icon-ion-gear-a" viewBox="0 0 768 1024">
+			<title>ion-gear-a</title>
+			<path class="path1" d="M694 512c0 48 30 86 74 112-8 26-20 52-32 76-50-12-90 6-124 40s-44 74-32 124c-24 12-50 24-76 32-26-44-72-74-120-74s-94 30-120 74c-26-8-54-20-78-32 12-50 4-90-30-124s-74-42-124-30c-12-24-24-52-32-78 44-26 74-72 74-120s-30-86-74-112c8-26 18-52 32-76 50 12 90-6 124-40s42-74 30-124c24-12 52-24 78-32 26 44 72 74 120 74s94-30 120-74c26 8 54 20 78 32-12 50-4 90 30 124s74 52 124 40c12 24 24 50 32 76-44 26-74 64-74 112zM384 708c108 0 196-88 196-196s-88-196-196-196-196 88-196 196 88 196 196 196z"></path>
+		</symbol>
+		<symbol id="icon-angle-left" viewBox="0 0 366 1024">
+			<title>angle-left</title>
+			<path class="path1" d="M358.286 310.857q0 7.429-5.714 13.143l-224.571 224.571 224.571 224.571q5.714 5.714 5.714 13.143t-5.714 13.143l-28.571 28.571q-5.714 5.714-13.143 5.714t-13.143-5.714l-266.286-266.286q-5.714-5.714-5.714-13.143t5.714-13.143l266.286-266.286q5.714-5.714 13.143-5.714t13.143 5.714l28.571 28.571q5.714 5.714 5.714 13.143z"></path>
+		</symbol>
+		<symbol id="icon-angle-right" viewBox="0 0 366 1024">
+			<title>angle-right</title>
+			<path class="path1" d="M340 548.571q0 7.429-5.714 13.143l-266.286 266.286q-5.714 5.714-13.143 5.714t-13.143-5.714l-28.571-28.571q-5.714-5.714-5.714-13.143t5.714-13.143l224.571-224.571-224.571-224.571q-5.714-5.714-5.714-13.143t5.714-13.143l28.571-28.571q5.714-5.714 13.143-5.714t13.143 5.714l266.286 266.286q5.714 5.714 5.714 13.143z"></path>
+		</symbol>
+		<symbol id="icon-angle-up" viewBox="0 0 658 1024">
+			<title>angle-up</title>
+			<path class="path1" d="M614.286 676.571q0 7.429-5.714 13.143l-28.571 28.571q-5.714 5.714-13.143 5.714t-13.143-5.714l-224.571-224.571-224.571 224.571q-5.714 5.714-13.143 5.714t-13.143-5.714l-28.571-28.571q-5.714-5.714-5.714-13.143t5.714-13.143l266.286-266.286q5.714-5.714 13.143-5.714t13.143 5.714l266.286 266.286q5.714 5.714 5.714 13.143z"></path>
+		</symbol>
+		<symbol id="icon-angle-down" viewBox="0 0 658 1024">
+			<title>angle-down</title>
+			<path class="path1" d="M614.286 420.571q0 7.429-5.714 13.143l-266.286 266.286q-5.714 5.714-13.143 5.714t-13.143-5.714l-266.286-266.286q-5.714-5.714-5.714-13.143t5.714-13.143l28.571-28.571q5.714-5.714 13.143-5.714t13.143 5.714l224.571 224.571 224.571-224.571q5.714-5.714 13.143-5.714t13.143 5.714l28.571 28.571q5.714 5.714 5.714 13.143z"></path>
+		</symbol>
+		</defs>
+	</svg>
 	<main role="main">
 
 	<div class="ba-container">
@@ -50,6 +78,13 @@
 						<div class="ba-slide">
 							<img src="img/product/headphones5.png" alt="Headphones">
 						</div>
+
+						<svg class="slick-arrow slick-prev">
+							<use xlink:href="#icon-angle-left"></use>
+						</svg>
+						<svg class="slick-arrow slick-next">
+							<use xlink:href="#icon-angle-right"></use>
+						</svg>
 					</div>
 					<!-- /.ba-slider -->
 
@@ -57,7 +92,12 @@
 				<div class="ba-width-medium-1-2">
 					<div class="ba-product__info">
 						<p class="ba-product__model">Model: 505795</p>
-						<a class="ba-product__spec" href="#"><i class="icon-cog"></i>spec</a>
+						<a class="ba-product__spec" href="#">
+							<svg>
+								<use xlink:href="#icon-ion-gear-a"></use>
+							</svg>
+							spec
+						</a>
 
 						<h1 class="ba-product__title">MOMENTUM<sup>&reg;</sup></h1>
 						<h2 class="ba-product__subtitle">Wireless Black</h2>
@@ -69,11 +109,21 @@
 
 						<div class="ba-rating cf">
 							<div class="ba-rating__stars ba-float-left">
-								<i class="icon-star ba-filled"></i><!--
-								--><i class="icon-star ba-filled"></i><!--
-								--><i class="icon-star ba-filled"></i><!--
-								--><i class="icon-star ba-filled"></i><!--
-								--><i class="icon-star"></i>
+								<svg class="ba-rating__icon ba-filled">
+									<use xlink:href="#icon-ion-android-star"></use>
+								</svg>
+								<svg class="ba-rating__icon ba-filled">
+									<use xlink:href="#icon-ion-android-star"></use>
+								</svg>
+								<svg class="ba-rating__icon ba-filled">
+									<use xlink:href="#icon-ion-android-star"></use>
+								</svg>
+								<svg class="ba-rating__icon ba-filled">
+									<use xlink:href="#icon-ion-android-star"></use>
+								</svg>
+								<svg class="ba-rating__icon">
+									<use xlink:href="#icon-ion-android-star"></use>
+								</svg>
 							</div>
 							<div class="ba-rating__value ba-float-left">
 								<span class="ba-rating__score">4.25</span>
@@ -105,10 +155,14 @@
 									Quantity
 									<input type="number" class="ba-product__qty-field" name="product_qty" value="01" step="1" min="1" requiered>
 									<button class="ba-product__qty-up">
-										<i class="icon-arrow-u"></i>
+										<svg>
+											<use xlink:href="#icon-angle-up"></use>
+										</svg>
 									</button>
 									<button class="ba-product__qty-down">
-										<i class="icon-arrow-d"></i>
+										<svg>
+											<use xlink:href="#icon-angle-down"></use>
+										</svg>
 									</button>
 								</label>
 								<button class="ba-button ba-float-right" type="submit">Add to Cart</button>
